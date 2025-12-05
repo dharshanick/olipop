@@ -1,3 +1,34 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "cherry-can",
+      "description": "A can of cherry flavored soda.",
+      "imageUrl": "https://images.unsplash.com/photo-1680420572844-8ab1ca2af43c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8Y2hlcnJ5JTIwc29kYSUyMGNhbnxlbnwwfHx8fDE3NjQ5Mzk5ODN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "cherry soda can"
+    },
+    {
+      "id": "orange-can",
+      "description": "A can of orange flavored soda.",
+      "imageUrl": "https://images.unsplash.com/photo-1596793453600-adeef0163df2?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxvcmFuZ2UlMjBzb2RhJTIwY2FufGVufDB8fHx8MTc2NDkzOTk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "orange soda can"
+    },
+    {
+      "id": "lemon-can",
+      "description": "A can of lemon ginger flavored soda.",
+      "imageUrl": "https://images.unsplash.com/photo-1757941288680-59aeaa954086?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxsZW1vbiUyMHNvZGElMjBjYW58ZW58MHx8fHwxNzY0OTM5OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "lemon soda can"
+    },
+    {
+      "id": "about-image",
+      "description": "Lifestyle image showing Olipop cans.",
+      "imageUrl": "https://images.unsplash.com/photo-1622644589568-8762cd35ed17?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c29kYSUyMGNhbnMlMjBsaWZlc3R5bGV8ZW58MHx8fHwxNzY0OTM5OTgzfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "soda cans lifestyle"
+    },
+    {
+      "id": "ingredients-image",
+      "description": "Image of fresh fruits and ingredients.",
+      "imageUrl": "https://images.unsplash.com/photo-1592918489661-b098eb4e343c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmcmVzaCUyMGZydWl0fGVufDB8fHx8MTc2NDkzOTk4M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "fresh fruit"
+    }
+  ]
 }

@@ -27,7 +27,7 @@ export default function WebpSequenceCanvas({
   const [images, setImages] = useState<HTMLImageElement[]>([]);
   const [isLoaded, setIsLoaded] = useState(false);
   const imageCache = useRef<Map<string, HTMLImageElement[]>>(new Map());
-  const animationFrameId = useRef<number>();
+  const animationFrameId = useRef<number | null>(null);
 
   useEffect(() => {
     let active = true;

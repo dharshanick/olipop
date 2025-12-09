@@ -15,18 +15,6 @@ function Calendar({
   showOutsideDays = true,
   ...props
 }: CalendarProps) {
-  const PreviousMonthButton = (buttonProps: React.ComponentProps<'button'>) => (
-    <button {...buttonProps} className={cn(buttonVariants({ variant: "outline" }), "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100", "absolute left-1")}>
-      <ChevronLeft className="h-4 w-4" />
-    </button>
-  );
-
-  const NextMonthButton = (buttonProps: React.ComponentProps<'button'>) => (
-    <button {...buttonProps} className={cn(buttonVariants({ variant: "outline" }), "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100", "absolute right-1")}>
-      <ChevronRight className="h-4 w-4" />
-    </button>
-  );
-  
   return (
     <DayPicker
       showOutsideDays={showOutsideDays}
@@ -72,14 +60,39 @@ function Calendar({
         day_hidden: "invisible",
         ...classNames,
       }}
+
       components={{
-        IconLeft: () => <ChevronLeft className="h-4 w-4" />,
-        IconRight: () => <ChevronRight className="h-4 w-4" />,
+        PreviousMonthButton: ({ className: buttonClassName, ...buttonProps }) => (
+          <button
+            {...buttonProps}
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute left-1",
+              buttonClassName
+            )}
+          >
+            <ChevronLeft className="h-4 w-4" />
+          </button>
+        ),
+        NextMonthButton: ({ className: buttonClassName, ...buttonProps }) => (
+          <button
+            {...buttonProps}
+            className={cn(
+              buttonVariants({ variant: "outline" }),
+              "h-7 w-7 bg-transparent p-0 opacity-50 hover:opacity-100 absolute right-1",
+              buttonClassName
+            )}
+          >
+            <ChevronRight className="h-4 w-4" />
+          </button>
+        ),
       }}
+
       {...props}
     />
   )
 }
+
 Calendar.displayName = "Calendar"
 
 export { Calendar }
